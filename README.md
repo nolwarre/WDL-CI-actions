@@ -4,7 +4,7 @@
 [hello]: https://github.com/nolwarre/WDL-CI-actions/actions?query=workflow%3AHelloWorld
 # Creating Testing Badges for Workflows
 ## Badge Creation
-Badges are a common markdown tool used in README.md and are used to display the status of a given service. This is often used to show that a repository is up to date and working as expected.
+Badges are a common markdown tool used in README and are used to display the status of a given service. This is often used to show that a repository is up to date and working as expected.
 
 They follow the general form of `[![BadgeName](badge.svg)](status)` \
 This is what a test badge looks like [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges) 
@@ -17,6 +17,6 @@ The status is the important part that contains the api call for the github actio
 
 ## Setting up the GitHub Action
 
-
+GitHub actions are made from yml files that are located in the .github/workflows of the repository that the action is resposible for.
 
 
