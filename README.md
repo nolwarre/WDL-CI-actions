@@ -7,7 +7,7 @@
 Badges are a common markdown tool used in README.md and are used to display the status of a given service. This is often used to show that a repository is up to date and working as expected.
 
 They follow the general form of `[![BadgeName](badge.svg)](status)` \
-This is what a test badge looks like [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges) \
+This is what a test badge looks like [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges) 
 
 The BadgeName can be anything that describes what the badge is used for.
 
