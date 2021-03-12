@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
+name: HelloWorldCWL
+
+# Controls when the action will run.
+on:
+  push:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.6]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Cache docker
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-docker-image
+      with:
+        path: /var/lib/docker
+        key: ${{ runner.os }}-build-${{ env.cache-name }}
+    - name: Install dependencies
+      run: sudo apt-get install cwltool
+    - name: Verify cwltool
+      run: cwltool --version
+    - name: Test with cwltool
+      run: cwltool cwl/hello.cwl cwl/hello.json

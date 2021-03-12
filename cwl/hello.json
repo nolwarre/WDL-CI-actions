@@ -1,6 +1,6 @@
 {
   "myName": {
         "class": "File",
-        "path": "cwl/name.txt"
+        "path": "../cwl/name.txt"
   }
 }
