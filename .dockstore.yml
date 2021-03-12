@@ -5,3 +5,8 @@ workflows:
      testParameterFiles:
          - /wdl/hello.json
      name: HelloWorld
+   - subclass: CWL
+      primaryDescriptorPath: /cwl/hello.cwl
+      testParameterFiles:
+         - /cwl/hello.json
+       name: hello
