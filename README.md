@@ -1,7 +1,11 @@
-[![HelloBadge][hello-badge]][hello]
+[![HelloWDLBadge][hello-WDL-badge]][hello]
+[![HelloCWLBadge][hello-CWL-badge]][hello]
 
-[hello-badge]: https://github.com/nolwarre/WDL-CI-actions/actions/workflows/main.yml/badge.svg
-[hello]: https://github.com/nolwarre/WDL-CI-actions/actions?query=workflow%3AHelloWorld
+[hello-WDL-badge]: https://github.com/nolwarre/WDL-CI-actions/actions/workflows/wdl.yml/badge.svg
+[hello]: https://github.com/nolwarre/WDL-CI-actions/actions?query=workflow%3AHelloWorldWDL
+
+[hello-CWL-badge]: https://github.com/nolwarre/WDL-CI-actions/actions/workflows/cwl.yml/badge.svg
+[hello]: https://github.com/nolwarre/WDL-CI-actions/actions?query=workflow%3AHelloWorldCWL
 # Creating Testing Badges for Workflows
 ## Badge Creation
 Badges are a common markdown tool used in README and are used to display the status of a given service. This is often used to show that a repository is up to date and working as expected.
