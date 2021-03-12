@@ -12,6 +12,7 @@
 - [GitHub Actions](#setting-up-the-github-action)  
     - [GitHub Actions for WDL](#wdl-specific-actions)
     - [GitHub Actions for CWL](#cwl-specific-actions)
+
 ## Badge Creation
 Badges are a common markdown tool used in README and are used to display the status of a given service. This is often used to show that a repository is up to date and working as expected.
 
@@ -24,13 +25,12 @@ The badge.svg is the path which contains the image for the badge, when using git
 
 The status is the important part that contains the api call for the github action which will provide the status to present on the badge.
 
-
 ## Setting up the GitHub Action
 
 GitHub actions are made from YAML files that are located in the .github/workflows of the repository that the action is responsible for. It is a set of functions that can execute when pushed that will execute to verify the commit is valid. To learn more about the syntax, read the GitHub documentation on GitHub Actions.
 
 ### WDL specific actions
-To set up GitHub Actions for WDL, use Cromwell and Womtoll in order to validate the workflow and run the workflow on test data.
+The example GitHub Actions for WDL are located in `.github/Workflows/wdl.yml`. To set up GitHub Actions for WDL, use Cromwell and Womtoll in order to validate the workflow and run the workflow on test data.
 
 Both Cromwell and Womtool use Java in order to execute. GitHub has actions that are located on the marketplace to setup features, one of which is Java.
 By calling the GitHub actions in the steps and specifying a java version to be setup the action will include Java. This is done with the syntax.
@@ -67,7 +67,7 @@ Cromwell is used to execute the WDL workflow with examples inputs, use small dat
 ```
 
 ### CWL specific actions
-CWL can be executed using cwltool with test inputs. cwltool can be installed with apt-get since it is an ubuntu environment.
+The example GitHub Actions for CWL are located in `.github/Workflows/cwl.yml`. CWL can be executed using cwltool with test inputs. cwltool can be installed with apt-get since it is an ubuntu environment.
 
 Python can be installed and executed with the prewritten action by GitHub.
 ```
