@@ -7,6 +7,11 @@
 [hello-CWL-badge]: https://github.com/nolwarre/WDL-CI-actions/actions/workflows/cwl.yml/badge.svg
 [hello]: https://github.com/nolwarre/WDL-CI-actions/actions?query=workflow%3AHelloWorldCWL
 # Creating Testing Badges for Workflows
+#### Table Of Contents
+- [Badge Creation](#badge-creation)  
+- [GitHub Actions](#setting-up-the-github-action)  
+    - [GitHub Actions for WDL](#wdl-specific-actions)
+    - [GitHub Actions for CWL](#cwl-specific-actions)
 ## Badge Creation
 Badges are a common markdown tool used in README and are used to display the status of a given service. This is often used to show that a repository is up to date and working as expected.
 
