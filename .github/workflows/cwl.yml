@@ -5,7 +5,7 @@ name: HelloWorldCWL
 # Controls when the action will run.
 on:
   push:
-
+  pull_request:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -35,5 +35,7 @@ jobs:
       run: sudo apt-get install cwltool
     - name: Verify cwltool
       run: cwltool --version
-    - name: Test with cwltool
+    - name: Validate with cwltool
+      run: cwltool --validate cwl/hello.cwl
+    - name: Run with cwltool
       run: cwltool cwl/hello.cwl cwl/hello.json
